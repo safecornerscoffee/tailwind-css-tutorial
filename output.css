@@ -559,6 +559,10 @@ video {
 
 @tainwind components;
 
+.order-last {
+  order: 9999;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -696,6 +700,10 @@ video {
     -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
             animation-timing-function: cubic-bezier(0,0,0.2,1);
   }
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .items-center {
@@ -866,6 +874,9 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:order-none {
+    order: 0;
+  }
 }
 
 @media (min-width: 768px) {
